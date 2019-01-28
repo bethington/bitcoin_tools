@@ -5,6 +5,7 @@ cd root
 git clone https://github.com/bitcoin/bitcoin
 cd bitcoin
 ./autogen.sh
-./configure --without-gui --disable-wallet
-make
-make install
+# ./configure MAKE=gmake --without-gui --disable-wallet
+./configure --disable-dependency-tracking --without-gui --disable-wallet
+gmake
+gmake install
