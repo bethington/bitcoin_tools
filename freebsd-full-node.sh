@@ -6,5 +6,5 @@ git clone https://github.com/bitcoin/bitcoin
 cd bitcoin
 ./autogen.sh
 ./configure --without-gui --disable-wallet
-gmake
-gmake install
+make
+make install
